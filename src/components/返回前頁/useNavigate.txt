@@ -1,0 +1,21 @@
+import React, { Component } from 'react';
+import { useNavigate } from "react-router-dom";
+
+class UseNavigate extends Component {
+  state = { 
+     }
+   
+  render() { 
+
+    const News = () => {
+      let navigate = useNavigate(); 
+      
+    return (
+      <>
+      <button onClick={()=> navigate('/home')}>Home</button>
+    </>
+    );
+  }}
+
+}
+export default UseNavigate;
